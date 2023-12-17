@@ -1,0 +1,19 @@
+<%- include("partials/header.ejs") %>
+
+<form action="/blogs" method="post">
+    <label for="title">Title</label>
+    <label for="blogpost"></label>
+    
+    <% if(locals.blog){ %>
+        <input type="hidden" name="id" value="<%=blog.id%>" />
+        <input class="input" id="title" type="text" name="title" value="<%=locals.blog.title%>"><br>
+        <textarea id="blogpost" name="post_text" rows="4" cols="50" placeholder="Write your blog post here!"><%=locals.data%></textarea>
+        <% } else { %>
+        <input class="input" id="title" type="text" name="title" placeholder="Your Title Here"><br>
+        <textarea id="blogpost" name="post_text" rows="4" cols="50" placeholder="Write your blog post here!"></textarea>
+        <% } %>
+    <input class="btn post" type="submit" value="Post"> 
+</form>
+
+
+<%- include("partials/footer.ejs") %>

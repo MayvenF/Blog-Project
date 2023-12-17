@@ -1,0 +1,15 @@
+<%- include("partials/header.ejs") %>
+
+    <h1>Let's Get In Touch!</h1>
+    <h3>Leave your name, email and a comment</h3>
+    <form method="post" >
+        <input name="name" class="feedback-input" placeholder="name"/>
+        <input name="email" class="feedback-input" placeholder="email"/>
+        <textarea name="comment" class="feedback-input" placeholder="leave a comment here"></textarea>
+        <input type="submit" value="Submit" class="feedback-input"/>
+    </form>
+    <% if(locals.response){ %>
+        <h4><%=locals.response%></h4>
+    <% } %>
+
+<%- include("partials/footer.ejs") %>

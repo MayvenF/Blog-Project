@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad&family=Quicksand:wght@300&display=swap');
+
+body{
+    background-color: #F8FCFD;
+}
+
+.container{
+    padding-top: 20px;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.view-tab{
+    tab-size:2;
+}
+.postbox {
+    display: flex;
+}
+
+.links {
+    padding: 15px;
+    font-size: 20px;
+    font-family: Quicksand;
+    background-color: #A9D2DA ;
+    color: #3F4E51;
+    text-decoration: none;
+}
+
+.links:hover{
+    background-color: #87B9C3;
+}
+
+.nav-bar{
+   
+    background-color: #A9D2DA;
+    padding: 15px;
+}
+
+
+a.btn.new{
+    width: 8%;
+    /* padding: 13px 20px;
+    font-size: 15px;
+    font-family: Quicksand;
+    background-color: #A9D2DA ;
+    color: #3F4E51;
+    text-decoration: none; */
+    display: block;
+    margin: auto;
+    text-align: center;
+    
+}
+
+a{
+    padding: 13px 20px;
+    font-size: 15px;
+    font-family: Quicksand;
+    background-color: #A9D2DA ;
+    color: #3F4E51;
+    text-decoration: none;
+}
+
+.blogs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.postbox{
+    display: flex;
+    width: 40%;
+    background-color: #A9D2DA;
+    margin-top: 50px;
+    margin-inline: 20px;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+
+a.post{
+    font-size: 28px;
+}
+
+.options {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    margin-right: 50px;
+}
+
+h1{
+    font-family: Quicksand;
+    text-align: center;
+}
+
+.imgpost {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#imgmain {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+}
+
+p{
+    padding: 50px;
+    font-size: 18px;
+    margin-inline: 10%;
+    font-family: 'Afacad';
+}
+
+textarea#blogpost{
+    width: 70%;
+    height: 600px;
+    border: none;
+    background-color: F9FFFF;
+    margin-top: 20px;
+    font-family: 'Afacad';
+    font-size: 16px;
+}
+
+.btn.post{
+    padding: 13px 20px;
+    font-size: 15px;
+    font-family: Quicksand;
+    background-color: #A9D2DA ;
+    color: #3F4E51;
+    border: none;
+    display: block;
+}
+
+label{
+    font-size: 20px;
+    font-family: Afacad;
+    padding: 30px;
+}
+
+.input#title{
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    border: 0.2em;
+    font-family: Afacad;
+}
+
+h4,
+h3{
+    font-family: Afacad;
+    text-align: center;
+}
+
+.feedback-input{
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 200px;
+    font-family: Afacad;
+}

@@ -1,0 +1,13 @@
+<%- include("partials/header.ejs") %>
+
+<h1> <%=locals.blog.title%> </h1>
+
+ <p> <%=locals.data%>   </p>
+ 
+ <div class="options">
+ <a href="/makepost/<%=blog.id%>">Edit</a>
+ <a href="/blogs/<%=blog.id%>">Delete</a>
+</div>
+
+ 
+<%- include("partials/footer.ejs") %>

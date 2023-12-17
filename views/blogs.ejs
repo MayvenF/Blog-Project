@@ -1,0 +1,15 @@
+<%- include("partials/header.ejs") %>
+
+
+    <h1>My Blogs</h1>
+    <a class="btn new" href="/makepost/0">New</a>
+    <div class="blogs">
+        <% locals.blogs.forEach((element) => { %>
+            <div id="<%=element.id %>" class="postbox">
+                <a class="post" id="<%=element.id %>" href="./viewpost/<%=element.id %>"><%=element.title %></a>
+                <img class="imgpost post" src="<%=element.image%>">
+            </div>
+        <% }); %>
+    
+    </div>
+<%- include("partials/footer.ejs") %>
